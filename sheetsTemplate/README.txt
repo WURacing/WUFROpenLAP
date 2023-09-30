@@ -1,0 +1,1 @@
+Make sure that you duplicate any file that you use from this folder in order to preserve the template! - Austin
