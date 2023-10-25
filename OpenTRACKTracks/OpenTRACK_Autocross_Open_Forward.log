@@ -1,0 +1,38 @@
+_______                    ____________________________________ __
+__  __ \______________________  __/__  __ \__    |_  ____/__  //_/
+_  / / /__  __ \  _ \_  __ \_  /  __  /_/ /_  /| |  /    __  ,<   
+/ /_/ /__  /_/ /  __/  / / /  /   _  _, _/_  ___ / /___  _  /| |  
+\____/ _  .___/\___//_/ /_//_/    /_/ |_| /_/  |_\____/  /_/ |_|  
+       /_/                                                        
+==================================================================
+Autocross.xlsx
+File read successfully
+==================================================================
+Name:          Autocross
+City:          
+Country:       
+Type:          Autocross
+Configuration: Open
+Direction:     Forward
+Mirror:        Off
+Date:          24/10/2023
+Time:          22:50:13
+==================================================================
+Track generation started.
+Pre-processing completed.
+Fine meshing completed with mesh size: 0.1 [m]
+Apex calculation completed.
+Track rotated.
+Fine mesh map created.
+Plots created and saved.
+Track generated successfully.
+Map:
+                                                      oo     oooooo
+                                             ooooooooooooooooo    o
+                                   ooooooooooo              ooooooo
+                    oo   ooooooooooo          ooo   ooooooooo      
+           ooooooooooooooo  oo        ooooooooo ooooo              
+     ooooooo                 oooooooooo                            
+oooooo                 ooooooo   o                                 
+              oooooooooo                                           
+        ooooooo                                                    

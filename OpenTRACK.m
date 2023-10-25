@@ -59,6 +59,7 @@ fclose('all') ;
 %% Track file selection
 
 filename = uigetfile('*.xlsx', 'Select a Track Sheet', './sheetsTrack') ;
+% filename = ("./sheetsTrack/Autocross.xlsx")
 if isequal(filename, 0)
     return;
 end
@@ -81,7 +82,7 @@ log_mode = 'speed & yaw' ;
 %% Settings
 
 % meshing
-mesh_size = 1 ; % [m]
+mesh_size = .1 ; % [m]
 % filtering for logged data mode
 filter_dt = 1 ; % [s]
 % track map rotation angle

@@ -303,16 +303,16 @@ toc(acceleration_timer)
 
 %% Deceleration preprocessing
 
-% deceleration timer start
-deceleration_timer = tic ;
-% saving time and position of braking start
-t_start = t ;
-x_start = x ;
-% speed trap condition
-check_speed_traps = true ;
-% active braking speed traps
-speed_trap_decel = speed_trap(speed_trap<=v) ;
-trap_number = length(speed_trap_decel) ;
+% % deceleration timer start
+% deceleration_timer = tic ;
+% % saving time and position of braking start
+% t_start = t ;
+% x_start = x ;
+% % speed trap condition
+% check_speed_traps = true ;
+% % active braking speed traps
+% speed_trap_decel = speed_trap(speed_trap<=v) ;
+% trap_number = length(speed_trap_decel) ;
 
 %% HUD display
 
@@ -322,81 +322,81 @@ disp(['Initial Speed: ',num2str(v*3.6),' [km/h]'])
 disp('|_______Comment________|_Speed_|_Accel_|_EnRPM_|_Gear__|_Tabs__|_Xabs__|_Trel__|_Xrel_|')
 disp('|______________________|[km/h]_|__[G]__|_[rpm]_|__[#]__|__[s]__|__[m]__|__[s]__|_[m]__|')
 
-%% Deceleration
-
-while true
-    % saving values
-    MODE(i) = 2 ;
-    T(i) = t ;
-    X(i) = x ;
-    V(i) = v ;
-    A(i) = a ;
-    RPM(i) = rpm ;
-    TPS(i) = 0 ;
-    BPS(i) = bps ;
-    GEAR(i) = gear ;
-    % checking if stopped or if out of memory
-    if v<=0
-        % zeroing speed
-        v = 0 ;
-        % HUD
-        fprintf('Stopped             \t')
-        hud(v,a,rpm,gear,t,x,t_start,x_start)
-        break
-    elseif i==N
-        % HUD
-        disp(['Did not stop at time ',num2str(t),' s'])
-        break
-    end
-    % checking speed trap
-    if check_speed_traps
-        % checking if current speed is under trap speed
-        if v<=speed_trap_decel(trap_number)
-            % HUD
-            fprintf('%s%3d %3d%s ','Speed Trap #',trap_number,round(speed_trap(trap_number)*3.6),'km/h')
-            hud(v,a,rpm,gear,t,x,t_start,x_start)
-            % next speed trap
-            trap_number = trap_number-1 ;
-            % checking if speed traps are completed
-            if trap_number<1
-                check_speed_traps = false ;
-            end
-        end
-    end
-    % aero forces
-    Aero_Df = 1/2*veh.rho*veh.factor_Cl*veh.Cl*veh.A*v^2 ;
-    Aero_Dr = 1/2*veh.rho*veh.factor_Cd*veh.Cd*veh.A*v^2 ;
-    % rolling resistance
-    Roll_Dr = veh.Cr*(-Aero_Df+Wz) ;
-    % drag acceleration
-    ax_drag = (Aero_Dr+Roll_Dr+Wx)/M ;
-    % gear
-    gear = interp1(veh.vehicle_speed,veh.gear,v) ;
-    % rpm
-    rpm = interp1(veh.vehicle_speed,veh.engine_speed,v) ;
-    % max long dec available from tyres
-    ax_tyre_max_dec = -1/M*(mux+dmx*(Nx-(Wz-Aero_Df)/4))*(Wz-Aero_Df) ;
-    % final long acc
-    ax = ax_tyre_max_dec ;
-    % brake pressure
-    bps = -veh.beta*veh.M*ax ;
-    % longitudinal acceleration
-    a = ax+ax_drag ;
-    % new position
-    x = x+v*dt+1/2*a*dt^2 ;
-    % new velocity
-    v = v+a*dt ;
-    % new time
-    t = t+dt ;
-    % next iteration
-    i = i+1 ;
-end
-% average deceleration
-a_dec_ave = V(i_acc)/(t-t_start) ;
-disp(['Average deceleration:    ',num2str(a_dec_ave/9.81,'%6.3f'),' [G]'])
-disp(['Peak deceleration   :    ',num2str(-min(A)/9.81,'%6.3f'),' [G]'])
-% deceleration timer
-toc(deceleration_timer)
+% %% Deceleration
+% 
+% while true
+%     % saving values
+%     MODE(i) = 2 ;
+%     T(i) = t ;
+%     X(i) = x ;
+%     V(i) = v ;
+%     A(i) = a ;
+%     RPM(i) = rpm ;
+%     TPS(i) = 0 ;
+%     BPS(i) = bps ;
+%     GEAR(i) = gear ;
+%     % checking if stopped or if out of memory
+%     if v<=0
+%         % zeroing speed
+%         v = 0 ;
+%         % HUD
+%         fprintf('Stopped             \t')
+%         hud(v,a,rpm,gear,t,x,t_start,x_start)
+%         break
+%     elseif i==N
+%         % HUD
+%         disp(['Did not stop at time ',num2str(t),' s'])
+%         break
+%     end
+%     % checking speed trap
+%     if check_speed_traps
+%         % checking if current speed is under trap speed
+%         % if v<=speed_trap_decel(trap_number)
+%         %     % HUD
+%         %     fprintf('%s%3d %3d%s ','Speed Trap #',trap_number,round(speed_trap(trap_number)*3.6),'km/h')
+%         %     hud(v,a,rpm,gear,t,x,t_start,x_start)
+%         %     % next speed trap
+%         %     trap_number = trap_number-1 ;
+%         %     % checking if speed traps are completed
+%         %     if trap_number<1
+%         %         check_speed_traps = false ;
+%         %     end
+%         % end
+%     end
+%     % aero forces
+%     Aero_Df = 1/2*veh.rho*veh.factor_Cl*veh.Cl*veh.A*v^2 ;
+%     Aero_Dr = 1/2*veh.rho*veh.factor_Cd*veh.Cd*veh.A*v^2 ;
+%     % rolling resistance
+%     Roll_Dr = veh.Cr*(-Aero_Df+Wz) ;
+%     % drag acceleration
+%     ax_drag = (Aero_Dr+Roll_Dr+Wx)/M ;
+%     % gear
+%     gear = interp1(veh.vehicle_speed,veh.gear,v) ;
+%     % rpm
+%     rpm = interp1(veh.vehicle_speed,veh.engine_speed,v) ;
+%     % max long dec available from tyres
+%     ax_tyre_max_dec = -1/M*(mux+dmx*(Nx-(Wz-Aero_Df)/4))*(Wz-Aero_Df) ;
+%     % final long acc
+%     ax = ax_tyre_max_dec ;
+%     % brake pressure
+%     bps = -veh.beta*veh.M*ax ;
+%     % longitudinal acceleration
+%     a = ax+ax_drag ;
+%     % new position
+%     x = x+v*dt+1/2*a*dt^2 ;
+%     % new velocity
+%     v = v+a*dt ;
+%     % new time
+%     t = t+dt ;
+%     % next iteration
+%     i = i+1 ;
+% end
+% % average deceleration
+% a_dec_ave = V(i_acc)/(t-t_start) ;
+% disp(['Average deceleration:    ',num2str(a_dec_ave/9.81,'%6.3f'),' [G]'])
+% disp(['Peak deceleration   :    ',num2str(-min(A)/9.81,'%6.3f'),' [G]'])
+% % deceleration timer
+% % toc(deceleration_timer)
 
 %% End of simulation
 
