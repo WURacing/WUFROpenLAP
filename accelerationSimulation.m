@@ -1,4 +1,4 @@
-function t = accelerationSimulation(vehiclefile, dx)
+function t = accelerationSimulation(veh, dx)
 
     %% Loading vehicle
     
@@ -27,7 +27,7 @@ function t = accelerationSimulation(vehiclefile, dx)
     %% Vehicle data preprocessing
     
     % loading file
-    veh = load(vehiclefile) ;
+    %veh = load(vehiclefile) ;
     % mass
     M = veh.M ;
     % gravity constant
@@ -102,16 +102,16 @@ function t = accelerationSimulation(vehiclefile, dx)
     %% HUD display
     
     %  folder
-    [folder_status,folder_msg] = mkdir('OpenDRAGSims') ;
-    % diary
-    if use_date_time_in_name
-        date_time = "_"+datestr(now,'yyyy_mm_dd')+"_"+datestr(now,'HH_MM_SS') ; %#ok<UNRCH>
-    else
-        date_time = "" ;
-    end
-    simname = "OpenDRAGSims/OpenDRAG_"+veh.name+date_time ;
-    delete(simname+".log") ;
-    diary(simname+".log") ;
+%     [folder_status,folder_msg] = mkdir('OpenDRAGSims') ;
+%     % diary
+%     if use_date_time_in_name
+%         date_time = "_"+datestr(now,'yyyy_mm_dd')+"_"+datestr(now,'HH_MM_SS') ; %#ok<UNRCH>
+%     else
+%         date_time = "" ;
+%     end
+%     simname = "OpenDRAGSims/OpenDRAG_"+veh.name+date_time ;
+%     delete(simname+".log") ;
+%     diary(simname+".log") ;
     % HUD
     
     

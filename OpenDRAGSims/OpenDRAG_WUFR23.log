@@ -1,64 +1,22 @@
-{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.ui.control.TextArea/set.Value', 'C:\Program Files\MATLAB\R2020a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\TextArea.m', 91)" style="font-weight:bold">matlab.ui.control.TextArea/set.Value</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\TextArea.m',91,0)">line 91</a>)
-'Value' must be a character vector, or a 1-D array of the following type: cell
-array of character vectors, string, or categorical.
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mockCOMP/RunSimulationButtonPushed', 'C:\Users\austi\OneDrive\Desktop\racing\WUFROpenLAP\mockCOMP.mlapp', 199)" style="font-weight:bold">mockCOMP/RunSimulationButtonPushed</a> (<a href="matlab: opentoline('C:\Users\austi\OneDrive\Desktop\racing\WUFROpenLAP\mockCOMP.mlapp',199,0)">line 199</a>)
-            app.TextArea.Value = results;
-} 
-Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.ui.control.internal.controller.ComponentController/executeUserCallback', 'C:\Program Files\MATLAB\R2020a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\+internal\+controller\ComponentController.m', 382)" style="font-weight:bold">matlab.ui.control.internal.controller.ComponentController/executeUserCallback</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\+internal\+controller\ComponentController.m',382,0)">line 382</a>)
-Error while evaluating Button PrivateButtonPushedFcn.
-
-[Warning: File not found or permission denied] 
-{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.ui.control.TextArea/set.Value', 'C:\Program Files\MATLAB\R2020a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\TextArea.m', 91)" style="font-weight:bold">matlab.ui.control.TextArea/set.Value</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\TextArea.m',91,0)">line 91</a>)
-'Value' must be a character vector, or a 1-D array of the following type: cell
-array of character vectors, string, or categorical.
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mockCOMP/RunSimulationButtonPushed', 'C:\Users\austi\OneDrive\Desktop\racing\WUFROpenLAP\mockCOMP.mlapp', 199)" style="font-weight:bold">mockCOMP/RunSimulationButtonPushed</a> (<a href="matlab: opentoline('C:\Users\austi\OneDrive\Desktop\racing\WUFROpenLAP\mockCOMP.mlapp',199,0)">line 199</a>)
-            app.TextArea.Value = results;
-} 
-Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.ui.control.internal.controller.ComponentController/executeUserCallback', 'C:\Program Files\MATLAB\R2020a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\+internal\+controller\ComponentController.m', 382)" style="font-weight:bold">matlab.ui.control.internal.controller.ComponentController/executeUserCallback</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\+internal\+controller\ComponentController.m',382,0)">line 382</a>)
-Error while evaluating Button PrivateButtonPushedFcn.
-
-[Warning: File not found or permission denied] 
-{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.ui.control.TextArea/set.Value', 'C:\Program Files\MATLAB\R2020a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\TextArea.m', 91)" style="font-weight:bold">matlab.ui.control.TextArea/set.Value</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\TextArea.m',91,0)">line 91</a>)
-'Value' must be a character vector, or a 1-D array of the following type: cell
-array of character vectors, string, or categorical.
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mockCOMP/RunSimulationButtonPushed', 'C:\Users\austi\OneDrive\Desktop\racing\WUFROpenLAP\mockCOMP.mlapp', 199)" style="font-weight:bold">mockCOMP/RunSimulationButtonPushed</a> (<a href="matlab: opentoline('C:\Users\austi\OneDrive\Desktop\racing\WUFROpenLAP\mockCOMP.mlapp',199,0)">line 199</a>)
-            app.TextArea.Value = results;
-} 
-Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.ui.control.internal.controller.ComponentController/executeUserCallback', 'C:\Program Files\MATLAB\R2020a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\+internal\+controller\ComponentController.m', 382)" style="font-weight:bold">matlab.ui.control.internal.controller.ComponentController/executeUserCallback</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\+internal\+controller\ComponentController.m',382,0)">line 382</a>)
-Error while evaluating Button PrivateButtonPushedFcn.
-
-[Warning: File not found or permission denied] 
-[Warning: File not found or permission denied] 
-{Unrecognized method, property, or field 'vehicleDropDown' for class 'mockCOMP'.
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mockCOMP/startupFcn', 'C:\Users\austi\OneDrive\Desktop\racing\WUFROpenLAP\mockCOMP.mlapp', 42)" style="font-weight:bold">mockCOMP/startupFcn</a> (<a href="matlab: opentoline('C:\Users\austi\OneDrive\Desktop\racing\WUFROpenLAP\mockCOMP.mlapp',42,0)">line 42</a>)
-            app.vehicleDropDown.Items = filenames;
-} 
-Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.apps.internal.GraphicsCallbackProxy/runCallbackFunction', 'C:\Program Files\MATLAB\R2020a\toolbox\matlab\appdesigner\appdesigner\runtime\+matlab\+apps\+internal\GraphicsCallbackProxy.m', 23)" style="font-weight:bold">matlab.apps.internal.GraphicsCallbackProxy/runCallbackFunction</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020a\toolbox\matlab\appdesigner\appdesigner\runtime\+matlab\+apps\+internal\GraphicsCallbackProxy.m',23,0)">line 23</a>)
-Error while evaluating GraphicsCallbackProxy CallbackFcn.
-
-{Unrecognized method, property, or field 'vehicleSelectDropDown' for class
-'mockCOMP'.
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mockCOMP/startupFcn', 'C:\Users\austi\OneDrive\Desktop\racing\WUFROpenLAP\mockCOMP.mlapp', 42)" style="font-weight:bold">mockCOMP/startupFcn</a> (<a href="matlab: opentoline('C:\Users\austi\OneDrive\Desktop\racing\WUFROpenLAP\mockCOMP.mlapp',42,0)">line 42</a>)
-            app.vehicleSelectDropDown.Items = filenames;
-} 
-Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.apps.internal.GraphicsCallbackProxy/runCallbackFunction', 'C:\Program Files\MATLAB\R2020a\toolbox\matlab\appdesigner\appdesigner\runtime\+matlab\+apps\+internal\GraphicsCallbackProxy.m', 23)" style="font-weight:bold">matlab.apps.internal.GraphicsCallbackProxy/runCallbackFunction</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020a\toolbox\matlab\appdesigner\appdesigner\runtime\+matlab\+apps\+internal\GraphicsCallbackProxy.m',23,0)">line 23</a>)
-Error while evaluating GraphicsCallbackProxy CallbackFcn.
-
-{Unrecognized method, property, or field 'vehicleDropDown' for class 'mockCOMP'.
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mockCOMP/VehicleSelectDropDownValueChanged', 'C:\Users\austi\OneDrive\Desktop\racing\WUFROpenLAP\mockCOMP.mlapp', 213)" style="font-weight:bold">mockCOMP/VehicleSelectDropDownValueChanged</a> (<a href="matlab: opentoline('C:\Users\austi\OneDrive\Desktop\racing\WUFROpenLAP\mockCOMP.mlapp',213,0)">line 213</a>)
-            app.vehiclefile = app.vehicleDropDown.Value;
-} 
-Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.ui.control.internal.controller.ComponentController/executeUserCallback', 'C:\Program Files\MATLAB\R2020a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\+internal\+controller\ComponentController.m', 425)" style="font-weight:bold">matlab.ui.control.internal.controller.ComponentController/executeUserCallback</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\+internal\+controller\ComponentController.m',425,0)">line 425</a>)
-Error while evaluating DropDown PrivateValueChangedFcn.
-
 [Warning: File not found or permission denied] 
 [Warning: File not found or permission denied] 
 [Warning: File not found or permission denied] 
 [Warning: File not found or permission denied] 
 [Warning: File not found or permission denied] 
+[Warning: File not found or permission denied] 
+[Warning: File not found or permission denied] 
+[Warning: File not found or permission denied] 
+[Warning: File not found or permission denied] 
+[Warning: File not found or permission denied] 
+[Warning: File not found or permission denied] 
+[Warning: File not found or permission denied] 
+[Warning: File not found or permission denied] 
+[Warning: File not found or permission denied] 
+[Warning: File not found or permission denied] 
+[Warning: File not found or permission denied] 
+[Warning: File not found or permission denied] 
+[Warning: File not found or permission denied] 
+matlab.internal.language.introspective.errorDocCallback('accelerationSimulation', 'C:\Users\austi\OneDrive\Desktop\racing\WUFROpenLAP\accelerationSimulation.m', 32)
+[Warning: File not found or permission denied] 
+[Warning: File not found or permission denied] 
+OpenTRACK

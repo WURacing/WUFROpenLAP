@@ -5,7 +5,7 @@ _  / / /__  __ \  _ \_  __ \_  /  __  /_/ /_  /| |  /    __  ,<
 \____/ _  .___/\___//_/ /_//_/    /_/ |_| /_/  |_\____/  /_/ |_|  
        /_/                                                        
 ==================================================================
-Endurance Shape Data .xlsx
+Endurance2019ShapeData.xlsx
 File read successfully
 ==================================================================
 Name:          Michigan Endurance
@@ -15,12 +15,12 @@ Type:          Permanent
 Configuration: Closed
 Direction:     Forward
 Mirror:        Off
-Date:          24/10/2023
-Time:          17:18:07
+Date:          28/10/2023
+Time:          12:30:18
 ==================================================================
 Track generation started.
 Pre-processing completed.
-Fine meshing completed with mesh size: 1 [m]
+Fine meshing completed with mesh size: 0.1 [m]
 Apex calculation completed.
 Track rotated.
 Closing fine mesh map.
@@ -29,22 +29,21 @@ Fine mesh map created.
 Plots created and saved.
 Track generated successfully.
 Map:
-                                                                oo 
-                                                              ooooo
-                                                         oooooo  o 
-                                                 ooooooooo       o 
- ooo                                 ooooooooooooo               o 
-  oooo                          oooooo                          oo 
- oo  oooo                oooooooo                               o  
- o      oo              o                                       oo 
- o       ooo          ooo                                      oo  
-oo         o         oo                                        o   
-o          ooo     ooo                                         o   
-o            ooooooo                                           o   
-o                                                              o   
-o                                                              oo  
-o                                                               o  
-o                                                      ooooooooo   
-oo       ooooooo      ooooo oo          oo     oooo    o           
- oo      oo    oo   ooo   oooooooooooooo ooooooo  oo   o           
-  ooooooooo     ooooo      o  oooo           oo    oooo            
+                                                               oooo
+                                                       ooooooooo oo
+                                 ooooooooooooooooooooooooo       o 
+                         ooooooooo                               o 
+ooo                      o                                      oo 
+oooooooooo              oo                                      o  
+ o       oooo          oo                                      oo  
+ o          ooo       oo                                       oo  
+oo            ooooooooo                                       oo   
+o                oo                                           o    
+oo                                                            o    
+o                                                            oo    
+o                                                            o     
+o                                           ooo     ooooo    o     
+oo                   ooo  oo ooooooooooooo oo oo   oo   oooooo     
+ o      ooooooo     oo oooooooo          ooo   ooooo               
+ oo     oo    oo oooo   oo  ooo                                    
+  oooooooo     ooo                                                 
