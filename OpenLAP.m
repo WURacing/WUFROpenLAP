@@ -1105,9 +1105,9 @@ function [] = export_report(veh,tr,sim,freq,logid)
         else % all other channels
             % checking for integer channel
             if strcmp(string(channel_names(i)),"gear") % gear needs to be integer
-                time_data(:,i) = interp1(data(:,j),data(:,i),t,'nearest','extrap') ;
+                %time_data(:,i) = interp1(data(:,j),data(:,i),t,'nearest','extrap') ;
             else % all other channels are linearly interpolated
-                time_data(:,i) = interp1(data(:,j),data(:,i),t,'linear','extrap') ;
+                %time_data(:,i) = interp1(data(:,j),data(:,i),t,'linear','extrap') ;
             end
         end
     end
