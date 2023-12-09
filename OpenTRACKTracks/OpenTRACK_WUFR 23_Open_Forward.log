@@ -1,0 +1,85 @@
+_______                    ____________________________________ __
+__  __ \______________________  __/__  __ \__    |_  ____/__  //_/
+_  / / /__  __ \  _ \_  __ \_  /  __  /_/ /_  /| |  /    __  ,<   
+/ /_/ /__  /_/ /  __/  / / /  /   _  _, _/_  ___ / /___  _  /| |  
+\____/ _  .___/\___//_/ /_//_/    /_/ |_| /_/  |_\____/  /_/ |_|  
+       /_/                                                        
+==================================================================
+wufr 23_wap 23_family arena_race_a_0657.csv
+File read successfully
+==================================================================
+Name:          WUFR 23
+City:          Family Arena
+Country:       probably america
+Type:          probably a temporary track unless we're really rich
+Configuration: Open
+Direction:     Forward
+Mirror:        Off
+Date:          04/11/2023
+Time:          16:01:17
+==================================================================
+Track generation started.
+Pre-processing completed.
+[Warning: Columns of data containing NaN values have been ignored during interpolation.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('interp1>Interp1DStripNaN', 'C:\Program Files\MATLAB\R2022a\toolbox\matlab\polyfun\interp1.m', 242)" style="font-weight:bold">interp1>Interp1DStripNaN</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022a\toolbox\matlab\polyfun\interp1.m',242,0)">line 242</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('interp1', 'C:\Program Files\MATLAB\R2022a\toolbox\matlab\polyfun\interp1.m', 173)" style="font-weight:bold">interp1</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022a\toolbox\matlab\polyfun\interp1.m',173,0)">line 173</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('WUFRTrack', 'C:\Users\bengi\Documents\MATLAB\WUFROpenLAP\WUFRTrack.m', 427)" style="font-weight:bold">WUFRTrack</a> (<a href="matlab: opentoline('C:\Users\bengi\Documents\MATLAB\WUFROpenLAP\WUFRTrack.m',427,0)">line 427</a>)] 
+Fine meshing completed with mesh size: 1 [m]
+Apex calculation completed.
+Track rotated.
+Fine mesh map created.
+Plots created and saved.
+Track generated successfully.
+Map:
+                                                       oooooooooo  
+                                                     ooo        oo 
+                                                   ooo            o
+                                                 ooo              o
+                                                oo               oo
+                                              oo                oo 
+                                             oo              ooo   
+                                             o             ooo     
+                                            oo           oo        
+                                             o           o         
+                                             o           oo        
+                                              o           oo       
+                                              o            o       
+                                            ooo             o      
+                                         oooo               o      
+                                     ooooo                 oo      
+                                  oooo                    oo       
+                                 oo                   ooooo        
+                                oo            oooooooo             
+                               oo         ooooo                    
+                               o        oo                         
+                               o       oo                          
+                               o       o                           
+                               o       oo                          
+                               oo       oo                         
+                                o        ooo                       
+                                oo         ooo                     
+                                 o           ooo                   
+                                 oo             oo                 
+                                  oo              o                
+                                   o              oo               
+                                   o              o                
+                                   o            oo                 
+                  oooooooooo     ooo          ooo                  
+                ooo        ooooooo          ooo                    
+               oo                        oooo                      
+              oo                       ooo                         
+             oo                      ooo                           
+            oo                     ooo                             
+           oo                    ooo                               
+          oo                   ooo                                 
+         oo                  ooo                                   
+        oo                 ooo                                     
+       oo                ooo                                       
+      oo               ooo                                         
+     oo              ooo                                           
+    oo             ooo                                             
+   oo            ooo                                               
+  oo            oo                                                 
+ oo                                                                
+oo                                                                 
+o                                                                  
